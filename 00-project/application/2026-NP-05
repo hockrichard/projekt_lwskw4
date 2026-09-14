@@ -1,0 +1,32 @@
+---
+name: Hock Richárd
+neptun: LWSKW4
+id: 2026-NP-05
+---
+# Egyedi 2D fizikai motor játékokhoz
+
+## A brief értelmezése
+
+A projekt egy kereskedelmi szintnél jóval egyszerűbb 2D fizikai motort kell létrehozni, amely tud ütközést és kontaktust megjeleníteni és szimulálni, valamint a teljesítményt megfigyelni, hogy biztosan stabil és hatékony legyen. 
+
+## Miért én lennék alkalmas erre a projektre?
+
+Egész életemben videójáték rajongó voltam, tehát a 2D-s játékokból is már párat tapasztaltam, mindig is érdekelt hogyan épül fel akár egy egyszerűbb fizikai motor ami ilyen játékok szíve lehet.
+
+## Releváns tapasztalat és előzmények
+
+## Tervezett megközelítés
+
+Először meghatároznám a fizikai motor elvárt működését, majd a matematikai számításokat amik a hátérben szükségesek lesznek, mely alapján választanám ki az alkalmas programozási nyelvet, hogy hatékony maradjon a program. Végül, miután alapszinten műkődőképes a motor, összehasonlítanám a Godot 2D-s motorjával, hogy egy piaci alkalmazáshoz hasonló-e a működése, valamint a hatékonysága.
+
+## Kezdeti terv
+
+1. Pontos elvárások meghatározása.
+2. Alkalmas programozási nyelv kiválasztása.
+3. A 2D-s szimuláció elkészítése, teljesítménymérés implementálása.
+4. A Godot játékmotorral összehasonlítás.
+5. Saját motor finomítása, optimalizálása.
+
+## További információ
+
+A kezdetektől Git repóban vezetem a munkát, és issue-k segítségével követem a feladatokat.
