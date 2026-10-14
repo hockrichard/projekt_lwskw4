@@ -1,17 +1,17 @@
 ---
-
-project\_outline: "[[01-project-outline-sample]]"
+project_outline: "[[01-project-outline-sample]]"
+---
 
 # Elektromosautó-töltő hálózat relációs adatbázisának tervezése és teljesítményoptimalizálása AI támogatással
 
-## 1\. Szereplők és jogosultságok
+## 1. Szereplők és jogosultságok
 
 | Szerep | Igény | Felelősség / hozzáférés |
 | :---- | :---- | :---- |
 | Adatbázis-fejlesztő | Relációs adatbázis tervezése, megvalósítása és optimalizálása. | Adatbázisséma létrehozása, tesztadat-generálás, SQL lekérdezések írása, teljesítményelemzés és indexelési stratégiák tesztelése. |
 | AI Rendszer | Optimalizálási javaslatok készítése SQL lekérdezésekhez. | Adatbázis sémák és lekérdezések elemzése, indexelési és optimalizálási javaslatok generálása. |
 
-## 2\. Use case-ek / user storyk
+## 2. Use case-ek / user storyk
 
 ### Adatbázis-tervezés és \-implementáció
 
@@ -45,7 +45,7 @@ project\_outline: "[[01-project-outline-sample]]"
   - Ha az AI által javasolt SQL hibás vagy végrehajthatatlan, a fejlesztő manuálisan javítja, és dokumentálja a hibát.  
 - **Utófeltétel:** Dokumentált összehasonlító elemzés a különböző optimalizációs megközelítésekről és indexelési stratégiákról.
 
-## 3\. Funkcionális követelmények
+## 3. Funkcionális követelmények
 
 | Követelmény | Elfogadási kritérium | Prioritás |
 | :---- | :---- | :---- |
@@ -59,7 +59,7 @@ project\_outline: "[[01-project-outline-sample]]"
 
 Prioritás: **Kötelező** \= a végtermékhez szükséges; **Ajánlott** \= fontos; **Lehetséges** \= idő esetén opcionális (pl. particionálás vizsgálata).
 
-## 4\. Üzleti szabályok és korlátok
+## 4. Üzleti szabályok és korlátok
 
 | Szabály vagy korlát | Indoklás |
 | :---- | :---- |
@@ -69,11 +69,11 @@ Prioritás: **Kötelező** \= a végtermékhez szükséges; **Ajánlott** \= fon
 | A külső AI szolgáltatás használatakor be kell tartani az adatvédelmi és biztonsági korlátokat. | Szenzitív vagy üzleti titkot képező (még ha szimulált is) adat ne kerüljön nyilvános LLM modellekbe kontrollálatlanul. |
 | A projekt nem követeli meg teljes üzemeltetői webalkalmazás fejlesztését. | A fókusz a relációs adatbázis tervezésén és a teljesítményoptimalizáláson van. |
 
-## 5\. Felhasználói felület és munkafolyamat
+## 5. Felhasználói felület és munkafolyamat
 
 Mivel a projekt egy adatbázis backend fókuszú feladat, nincs hagyományos végfelhasználói GUI (webes felület) megkövetelve. A "munkafolyamat" az adatbázis-fejlesztő szemszögéből az adatbázis-kezelő (pl. SQL Developer, SSMS) és a mérési szkriptek, terminálok használatát jelenti. Opcionálisan egy nagyon egyszerű üzemeltetői monitorozó felület készíthető a lekérdezések eredményeinek megjelenítésére, de ez csak lehetséges bővítés.
 
-## 6\. Nem funkcionális követelmények
+## 6. Nem funkcionális követelmények
 
 | Követelmény | Ellenőrzés módja |
 | :---- | :---- |
@@ -83,7 +83,7 @@ Mivel a projekt egy adatbázis backend fókuszú feladat, nincs hagyományos vé
 | AI összehasonlítás. | A hallgató saját és az AI által javasolt optimalizációinak (3 lekérdezésnél) helyességének, végrehajthatóságának és mért teljesítményének kvantitatív összevetése. |
 | Biztonság és adatvédelem | Rövid dokumentáció a külső AI eszköz használatának biztonsági kockázatairól és azok kezeléséről. |
 
-## 7\. Nyitott kérdések és kockázatok
+## 7. Nyitott kérdések és kockázatok
 
 | Kérdés / kockázat | Hatás | Felelős | Feloldás / döntés |
 | :---- | :---- | :---- | :---- |
@@ -91,7 +91,7 @@ Mivel a projekt egy adatbázis backend fókuszú feladat, nincs hagyományos vé
 | Az AI szolgáltatás hibás optimalizálási javaslatot ad. | Az AI-alapú optimalizáció mérési eredményei nem lesznek relevánsak. | Hallgató | Az AI javaslatainak manuális ellenőrzése futtatás előtt, hibák esetén dokumentálás és iteratív javítás. |
 | A hardveres erőforrások korlátai (pl. kevés RAM vagy lassú SSD) torzíthatják a teljesítménymérést. | A nagy (1M+) adatbázison futó lekérdezések futási ideje változhat. | Hallgató | A mérések többszöri (pl. 3x-5x) lefuttatása, átlagolás, cache-ek ürítése (vagy annak figyelembevétele) a mérések között. |
 
-## 8\. Kezdeti technikai javaslat
+## 8. Kezdeti technikai javaslat
 
 ### Javasolt megoldás
 
@@ -119,7 +119,7 @@ flowchart LR
     OP --> CMP[(Új metrikák, összehasonlítás)]
 ```
 
-## 9\. Megvalósíthatóság és technikai kockázatok
+## 9. Megvalósíthatóság és technikai kockázatok
 
 | Kockázat / feltételezés | A 2. félévre tervezett validáció | Tartalék megközelítés |
 | :---- | :---- | :---- |
