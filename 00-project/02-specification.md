@@ -112,13 +112,11 @@ A rendszer alapja egy Oracle Database vagy Microsoft SQL Server adatbázis-kezel
 ```mermaid
 flowchart LR
     DEV[Fejlesztő] --> DB[Relációs adatbázis]
-    DB --> SC[Adatgeneráló szkript\]
-    SC --> |SQL Lekérdezések|
-    DB \--\> |Mérési eredmények & Végrehajtási terv| MES\[Mérési / Elemző eszköz\]
-    DEV \--\> |SQL Lekérdezés| AI\[LLM AI Szolgáltatás\]
-    AI \--\> |Optimalizációs javaslat| DEV
-    DEV \--\> |Új Indexek & Optimalizált SQL| DB
-    DB \--\> |Új Metrikák| MES
+    DB --> SC[Adatgeneráló szkript]
+    SC --> SQL[SQL lekérdezések]
+    SQL --> AI[AI optimalizálás]
+    AI --> OP[Optimalizált SQL]
+    OP --> CMP[(Új metrikák, összehasonlítás)]
 ```
 
 ## 9\. Megvalósíthatóság és technikai kockázatok
