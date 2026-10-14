@@ -109,30 +109,24 @@ A rendszer alapja egy Oracle Database vagy Microsoft SQL Server adatbázis-kezel
 
 ### Kezdeti architektúravázlat
 
+```mermaid
 flowchart LR
-
-    DEV\[Fejlesztő / Hallgató\] \--\> |Adatmodell (DDL) & Logika (PL/SQL, T-SQL)| DB\[(RDBMS: Oracle / MS SQL)\]
-
-    GEN\[Adatgeneráló szkript\] \--\> |100k munkamenet, 1M+ rekord| DB
-
-    DEV \--\> |Alap SQL Lekérdezések| DB
-
+    DEV[Fejlesztő] --> DB[Relációs adatbázis]
+    DB --> SC[Adatgeneráló szkript\]
+    SC --> |SQL Lekérdezések|
     DB \--\> |Mérési eredmények & Végrehajtási terv| MES\[Mérési / Elemző eszköz\]
-
     DEV \--\> |SQL Lekérdezés| AI\[LLM AI Szolgáltatás\]
-
     AI \--\> |Optimalizációs javaslat| DEV
-
     DEV \--\> |Új Indexek & Optimalizált SQL| DB
-
     DB \--\> |Új Metrikák| MES
+```
 
 ## 9\. Megvalósíthatóság és technikai kockázatok
 
-| Kockázat / feltételezés | A fejlesztés során tervezett validáció | Tartalék megközelítés |
+| Kockázat / feltételezés | A 2. félévre tervezett validáció | Tartalék megközelítés |
 | :---- | :---- | :---- |
 | Az adatbázis-motor megfelelő beépített metrikákat (pl. I/O költség) szolgáltat a mérésekhez. | A natív eszközök (pl. DBMS\_XPLAN, SET STATISTICS IO) kipróbálása egy kisebb mintatáblán a fejlesztés elején. | Szükség esetén az OS szintű metrikák bevonása vagy más mérésiadat-gyűjtési módszer keresése. |
 | Az 1 000 000+ rekord generálása és betöltése nem okoz extrém teljesítmény- vagy helyproblémát. | A kötegelt (batch) beszúrás (pl. bulk insert) használata a soronkénti helyett, és az adatbázis növekedésének monitorozása. | Kisebb adatbázisfájl-növekmény beállítása, és a szkript futtatásának részekre bontása. |
-| Az AI által biztosított megoldás használható a választott RDBMS-hez. | Az LLM promptolása során specifikálni kell a pontos rendszert (pl. "Oracle 19c-hez javasolj indexet"). | Az AI javaslatainak manuális fordítása/szintaktikai javítása a hallgató által. |
-| A teljesítménykülönbség észrevehető lesz az indexek használatával. | Olyan (rosszul optimalizált, nagy adatmennyiséget mozgató) lekérdezések szándékos írása a kiindulási állapotban, amelyeknél az indexek garantáltan drasztikus javulást eredményeznek (pl. full table scan helyett index seek). | A tesztadatok számának és a lekérdezések bonyolultságának növelése, amíg a különbség mérhető nem lesz. |
+| Az AI által biztosított megoldás használható a választott relációsadatbázis-kezelő rendszerhez. | Az LLM promptolása során specifikálni kell a pontos rendszert (pl. "Oracle 19c-hez javasolj indexet"). | Az AI javaslatainak manuális fordítása/szintaktikai javítása a hallgató által. |
+| A teljesítménykülönbség észrevehető lesz az indexek használatával. | Olyan (rosszul optimalizált, nagy adatmennyiséget mozgató) lekérdezések szándékos írása a kiindulási állapotban, amelyeknél az indexek garantáltan drasztikus javulást eredményeznek. | A tesztadatok számának és a lekérdezések bonyolultságának növelése, amíg a különbség mérhető nem lesz. |
 
