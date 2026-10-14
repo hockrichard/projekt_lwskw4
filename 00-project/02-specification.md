@@ -71,7 +71,7 @@ Prioritás: **Kötelező** \= a végtermékhez szükséges; **Ajánlott** \= fon
 
 ## 5\. Felhasználói felület és munkafolyamat
 
-Mivel a projekt egy adatbázis backend fókuszú feladat, nincs hagyományos végfelhasználói GUI (webes felület) megkövetelve. A "munkafolyamat" az adatbázis-fejlesztő (hallgató) szemszögéből az adatbázis-kezelő (pl. SQL Developer, SSMS) és a mérési szkriptek, terminálok használatát jelenti. Opcionálisan egy nagyon egyszerű üzemeltetői monitorozó felület készíthető a lekérdezések eredményeinek megjelenítésére, de ez csak lehetséges bővítés.
+Mivel a projekt egy adatbázis backend fókuszú feladat, nincs hagyományos végfelhasználói GUI (webes felület) megkövetelve. A "munkafolyamat" az adatbázis-fejlesztő szemszögéből az adatbázis-kezelő (pl. SQL Developer, SSMS) és a mérési szkriptek, terminálok használatát jelenti. Opcionálisan egy nagyon egyszerű üzemeltetői monitorozó felület készíthető a lekérdezések eredményeinek megjelenítésére, de ez csak lehetséges bővítés.
 
 ## 6\. Nem funkcionális követelmények
 
@@ -87,9 +87,9 @@ Mivel a projekt egy adatbázis backend fókuszú feladat, nincs hagyományos vé
 
 | Kérdés / kockázat | Hatás | Felelős | Feloldás / döntés |
 | :---- | :---- | :---- | :---- |
-| Milyen programozási nyelven íródjon a tesztadat-generátor és a mérési szkript? | Befolyásolja a fejlesztési sebességet és a reprodukálhatóságot. | Hallgató | Szabadon választott (pl. Python, Java, vagy natív PL/SQL / T-SQL). |
+| Milyen programozási nyelven íródjon a tesztadat-generátor és a mérési szkript? | Befolyásolja a fejlesztési sebességet és a reprodukálhatóságot. | Hallgató | Szabadon választott (pl. Python, Java). |
 | Az AI szolgáltatás hibás optimalizálási javaslatot ad. | Az AI-alapú optimalizáció mérési eredményei nem lesznek relevánsak. | Hallgató | Az AI javaslatainak manuális ellenőrzése futtatás előtt, hibák esetén dokumentálás és iteratív javítás. |
-| A hardveres erőforrások korlátai (pl. kevés RAM vagy lassú SSD) torzíthatják a teljesítménymérést. | A nagy (1M+) adatbázison futó lekérdezések futási ideje fluktuálhat. | Hallgató | A mérések többszöri (pl. 3x-5x) lefuttatása, átlagolás, cache-ek ürítése (vagy annak figyelembevétele) a mérések között. |
+| A hardveres erőforrások korlátai (pl. kevés RAM vagy lassú SSD) torzíthatják a teljesítménymérést. | A nagy (1M+) adatbázison futó lekérdezések futási ideje változhat. | Hallgató | A mérések többszöri (pl. 3x-5x) lefuttatása, átlagolás, cache-ek ürítése (vagy annak figyelembevétele) a mérések között. |
 
 ## 8\. Kezdeti technikai javaslat
 
@@ -104,7 +104,7 @@ A rendszer alapja egy Oracle Database vagy Microsoft SQL Server adatbázis-kezel
 | Adatbázis | Oracle Database vagy Microsoft SQL Server | A projekt követelménye, biztosítják a robusztus teljesítményelemző eszközöket és az összetett indexelési lehetőségeket. |
 | Adatbázis nyelv | SQL \+ PL/SQL (Oracle) vagy T-SQL (MS SQL) | Natív eljárások, függvények, triggerek megírásához. |
 | Adatgenerálás & Mérés | Python, Java, bash vagy natív adatbázis szkript | Megfelelő a nagytömegű adat generálásához, az API hívásokhoz és a mérések automatizálásához. |
-| AI Asszisztens | OpenAI API (ChatGPT), Anthropic Claude, vagy lokális LLM (pl. Llama) | A lekérdezés-optimalizálási javaslatok lekéréséhez a 3 kötelező esetben. |
+| AI Asszisztens | OpenAI API (ChatGPT), Anthropic Claude, vagy Google Gemini | A lekérdezés-optimalizálási javaslatok lekéréséhez a 3 kötelező esetben. |
 | Teljesítményeszközök | DBMS\_XPLAN / SQL Trace (Oracle), vagy Actual Execution Plan / SET STATISTICS (MS SQL) | Kötelező, beépített eszközök a végrehajtási tervek lekéréséhez. |
 
 ### Kezdeti architektúravázlat
