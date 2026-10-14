@@ -8,7 +8,7 @@
 
 | Szerep | Igény | Felelősség / hozzáférés |
 | :---- | :---- | :---- |
-| Adatbázis-fejlesztő (Hallgató) | Relációs adatbázis tervezése, megvalósítása és optimalizálása. | Adatbázisséma létrehozása, tesztadat-generálás, SQL lekérdezések írása, teljesítményelemzés és indexelési stratégiák tesztelése. |
+| Adatbázis-fejlesztő | Relációs adatbázis tervezése, megvalósítása és optimalizálása. | Adatbázisséma létrehozása, tesztadat-generálás, SQL lekérdezések írása, teljesítményelemzés és indexelési stratégiák tesztelése. |
 | AI Rendszer | Optimalizálási javaslatok készítése SQL lekérdezésekhez. | Adatbázis sémák és lekérdezések elemzése, indexelési és optimalizálási javaslatok generálása. |
 
 ## 2\. Use case-ek / user storyk
