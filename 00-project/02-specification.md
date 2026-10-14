@@ -13,7 +13,7 @@ project_outline: "01-project-outline-sample"
 
 ## 2. Use case-ek / user storyk
 
-### Adatbázis-tervezés és \-implementáció
+### Adatbázis-tervezés és implementáció
 
 - **Szereplő:** Adatbázis-fejlesztő  
 - **Előfeltétel:** Megfelelő adatbázis-kezelő (Oracle vagy MS SQL Server) telepítése és konfigurálása.  
