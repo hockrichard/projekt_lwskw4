@@ -1,5 +1,5 @@
 ---
-project_outline: "01-project-outline-sample"
+project_outline: "01-project-outline"
 ---
 
 <!-- 5xl -->
