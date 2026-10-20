@@ -2,7 +2,6 @@
 project_outline: "01-project-outline-sample"
 ---
 
-<!-- 5xl -->
 # Elektromosautó-töltő hálózat relációs adatbázisának tervezése és teljesítményoptimalizálása AI támogatással
 
 ---
