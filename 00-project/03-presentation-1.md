@@ -12,6 +12,8 @@ project_outline: "01-project-outline-sample"
 * Projektazonosító: 2026-LA-01  
 ---
 
+<!-- @slide Probléma -->
+
 ## Probléma
 
 - **Skálázhatósági kihívások:** Az elektromosautó-töltő hálózatok nagy mennyiségű valós idejű és tranzakciós adatot generálnak (munkamenetek, mérések, időbélyegek).
@@ -20,6 +22,8 @@ project_outline: "01-project-outline-sample"
 
 ---
 
+<!-- @slide Célfelhasználók -->
+
 ## Célfelhasználók
 
 - **Adatbázis-fejlesztők:** Akik méretezhető és megfelelően normált adatmodell-struktúrát terveznek.
@@ -27,6 +31,8 @@ project_outline: "01-project-outline-sample"
 - **Rendszerarchitektek & Kutatók:** Akik az AI-alapú kódgenerálás és adatbázis-optimalizáció korlátait és előnyeit értékelik ki.
 
 ---
+
+<!-- @slide Tervezett hatókör -->
 
 ## Tervezett hatókör
 
@@ -41,6 +47,8 @@ project_outline: "01-project-outline-sample"
 - Éles termelési környezet kiépítése.
 
 ---
+
+<!-- @slide Kezdeti felhasználói utak -->
 
 ## Kezdeti felhasználói utak
 
@@ -57,6 +65,8 @@ project_outline: "01-project-outline-sample"
    - AI javaslatok manuális ellenőrzése, futtatása és a kapott teljesítménymetrikák számszerű összevetése.
 
 ---
+
+<!-- @slide Következő lépések -->
 
 ## Következő lépések
 
