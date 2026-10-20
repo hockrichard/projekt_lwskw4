@@ -1,9 +1,9 @@
 ---
-name: Jane Doe
-neptun: ABC123
-id: 2026-LG-02
-github: https://github.com/example/ev-charging-db-optimization
-github_project: https://github.com/users/username/projects/1
+name: Hock Richárd
+neptun: LWSKW4
+id: 2026-LA-01
+github: https://github.com/hockrichard
+github_project: https://github.com/hockrichard/projekt_lwskw4
 ---
 # Elektromosautó-töltő hálózat relációs adatbázisának tervezése és teljesítményoptimalizálása AI támogatással
 
