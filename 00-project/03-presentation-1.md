@@ -22,7 +22,7 @@ project_outline: "01-project-outline-sample"
 ## Célfelhasználók
 
 - **Adatbázis-fejlesztők:** Akik méretezhető és megfelelően normált (3NF) adatmodell-struktúrát terveznek.
-- **Adatbázis-adminisztrátorok (DBA):** Akiknek feladata a teljesítmény optimalizálása, indexelési stratégiák kidolgozása és a rendszerstabilitás fenntartása.
+- **Adatbázis-adminisztrátorok:** Akiknek feladata a teljesítmény optimalizálása, indexelési stratégiák kidolgozása és a rendszerstabilitás fenntartása.
 - **Rendszerarchitektek & Kutatók:** Akik az AI-alapú kódgenerálás és adatbázis-optimalizáció korlátait és előnyeit értékelik ki.
 
 ---
@@ -37,14 +37,14 @@ project_outline: "01-project-outline-sample"
 
 ### Nincs benne a hatókörben
 - Komplett webes vagy mobil végfelhasználói GUI fejlesztése.
-- Éles termelési (Production) környezet kiépítése.
+- Éles termelési környezet kiépítése.
 
 ---
 
 ## Kezdeti felhasználói utak
 
 1. **Adatbázis-architektúra és feltöltés:**
-   - Adatbázis-séma (DDL) inicializálása és hivatkozási integritás ellenőrzése.
+   - Adatbázis-séma inicializálása és hivatkozási integritás ellenőrzése.
    - Automatizált adatgeneráló szkript futtatása a milliós rekordtömeg betöltésére.
 
 2. **Mérés és Teljesítményelemzés:**
@@ -53,7 +53,7 @@ project_outline: "01-project-outline-sample"
 
 3. **AI-alapú optimalizáció és összehasonlítás:**
    - A lekérdezések és a séma átadása az AI-nak optimalizálásra.
-   - AI javaslatok manuális ellenőrzése, futtatása és a kapott teljesítménymetriák számszerű összevetése.
+   - AI javaslatok manuális ellenőrzése, futtatása és a kapott teljesítménymetrikák számszerű összevetése.
 
 ---
 
