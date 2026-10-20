@@ -60,5 +60,4 @@ project_outline: "01-project-outline-sample"
 ## Következő lépések
 
 - Adatbázis-kezelő környezet (Oracle / MS SQL Server) és a DDL sématerv véglegesítése.
-- A reprodukálható tesztadat-generáló szkript megírása (Python / Java).
-- A 10 összetett SQL lekérdezés megfogalmazása és a mérésautomatizálási szkript elkészítése.
+- A mérésautomatizálási szkript elkészítése.
