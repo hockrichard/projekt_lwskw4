@@ -21,7 +21,7 @@ project_outline: "01-project-outline-sample"
 
 ## Célfelhasználók
 
-- **Adatbázis-fejlesztők:** Akik méretezhető és megfelelően normált (3NF) adatmodell-struktúrát terveznek.
+- **Adatbázis-fejlesztők:** Akik méretezhető és megfelelően normált adatmodell-struktúrát terveznek.
 - **Adatbázis-adminisztrátorok:** Akiknek feladata a teljesítmény optimalizálása, indexelési stratégiák kidolgozása és a rendszerstabilitás fenntartása.
 - **Rendszerarchitektek & Kutatók:** Akik az AI-alapú kódgenerálás és adatbázis-optimalizáció korlátait és előnyeit értékelik ki.
 
