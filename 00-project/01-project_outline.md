@@ -2,8 +2,7 @@
 name: Hock Richárd
 neptun: LWSKW4
 id: 2026-LA-01
-github: https://github.com/hockrichard
-github_project: https://github.com/hockrichard/projekt_lwskw4
+github: https://github.com/hockrichard/projekt_lwskw4
 ---
 # Elektromosautó-töltő hálózat relációs adatbázisának tervezése és teljesítményoptimalizálása AI támogatással
 
