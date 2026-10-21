@@ -9,9 +9,9 @@ project_outline: "01-project-outline"
 * Neptun: LWSKW4
 * Témavezető: Lénárt Anett
 * Projektazonosító: 2026-LA-01  
+---
 
 <!-- @slide Probléma -->
-
 ## Probléma
 
 ---
