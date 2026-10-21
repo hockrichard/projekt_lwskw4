@@ -34,7 +34,7 @@
 ### Benne van a hatókörben
 - **3NF Relációs Séma:** legalább 10 összekapcsolt tábla.
 - **Tesztadat-generálás:** 100 000+ töltési munkamenet és 1 000 000+ mérési rekord.
-- **Összetett lekérdezések:** 10 komplex SQL lekérdezés és natív üzleti logika.
+- **Összetett lekérdezések:** 10 komplex SQL lekérdezés.
 - **Optimalizáció és AI:** Saját és AI által javasolt indexelési stratégiák összehasonlító mérése végrehajtási tervek alapján.
 
 ---
