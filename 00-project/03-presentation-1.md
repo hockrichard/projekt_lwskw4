@@ -5,7 +5,7 @@ project_outline: "01-project-outline"
 <!-- 5xl -->
 # Elektromosautó-töltő hálózat relációs adatbázisának tervezése és teljesítményoptimalizálása AI támogatással
 
----
+
 * Szerző: Hock Richárd
 * Neptun: LWSKW4
 * Témavezető: Lénárt Anett
