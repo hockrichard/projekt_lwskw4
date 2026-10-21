@@ -1,6 +1,3 @@
----
-project_outline: "01-project-outline"
----
 
 <!-- 5xl -->
 # Elektromosautó-töltő hálózat relációs adatbázisának tervezése és teljesítményoptimalizálása AI támogatással
@@ -19,7 +16,7 @@ project_outline: "01-project-outline"
 - **Skálázhatósági kihívások:** Az elektromosautó-töltő hálózatok nagy mennyiségű valós idejű és tranzakciós adatot generálnak (munkamenetek, mérések, időbélyegek).
 - **Lassú lekérdezések:** Nagy adatmennyiség mellett az összetett analitikai lekérdezések (aggregációk, ablakfüggvények) indexelés nélkül drasztikus teljesítményromlást okoznak.
 - **AI támogatás validációja:** Szükséges annak vizsgálata, hogy a generatív AI eszközök (LLM-ek) mennyire hatékonyak és megbízhatóak a relációs adatbázisok indexelési és lekérdezési optimalizációjában.
-
+---
 
 <!-- @slide Célfelhasználók -->
 
