@@ -13,6 +13,7 @@ project_outline: "01-project-outline"
 ---
 
 <!-- @slide Probléma -->
+---
 ## Probléma
 
 - **Skálázhatósági kihívások:** Az elektromosautó-töltő hálózatok nagy mennyiségű valós idejű és tranzakciós adatot generálnak (munkamenetek, mérések, időbélyegek).
