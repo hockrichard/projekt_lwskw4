@@ -13,9 +13,9 @@
 <!-- @slide Probléma -->
 ## Probléma
 
-- **Skálázhatósági kihívások:** Az elektromosautó-töltő hálózatok nagy mennyiségű valós idejű és tranzakciós adatot generálnak (munkamenetek, mérések, időbélyegek).
-- **Lassú lekérdezések:** Nagy adatmennyiség mellett az összetett analitikai lekérdezések (aggregációk, ablakfüggvények) indexelés nélkül drasztikus teljesítményromlást okoznak.
-- **AI támogatás validációja:** Szükséges annak vizsgálata, hogy a generatív AI eszközök (LLM-ek) mennyire hatékonyak és megbízhatóak a relációs adatbázisok indexelési és lekérdezési optimalizációjában.
+- **Skálázhatósági kihívások:** Az elektromosautó-töltő hálózatok nagy mennyiségű valós idejű és tranzakciós adatot generálnak.
+- **Lassú lekérdezések:** Nagy adatmennyiség mellett az összetett analitikai lekérdezések indexelés nélkül drasztikus teljesítményromlást okoznak.
+- **AI támogatás validációja:** Szükséges annak vizsgálata, hogy a generatív AI eszközök mennyire hatékonyak és megbízhatóak a relációs adatbázisok indexelési és lekérdezési optimalizációjában.
 ---
 
 <!-- @slide Célfelhasználók -->
@@ -32,10 +32,10 @@
 ## Tervezett hatókör
 
 ### Benne van a hatókörben
-- **3NF Relációs Séma:** legalább 10 összekapcsolt tábla (Oracle / MS SQL Server).
+- **3NF Relációs Séma:** legalább 10 összekapcsolt tábla.
 - **Tesztadat-generálás:** 100 000+ töltési munkamenet és 1 000 000+ mérési rekord.
-- **Összetett lekérdezések:** 10 komplex SQL lekérdezés és natív üzleti logika (PL/SQL / T-SQL).
-- **Optimalizáció és AI:** Saját és AI által javasolt indexelési stratégiák (min. 3 lekérdezésnél) összehasonlító mérése végrehajtási tervek alapján.
+- **Összetett lekérdezések:** 10 komplex SQL lekérdezés és natív üzleti logika.
+- **Optimalizáció és AI:** Saját és AI által javasolt indexelési stratégiák összehasonlító mérése végrehajtási tervek alapján.
 
 ---
 ### Nincs benne a hatókörben
@@ -53,7 +53,7 @@
    - Automatizált adatgeneráló szkript futtatása a milliós rekordtömeg betöltésére.
 
 2. **Mérés és Teljesítményelemzés:**
-   - Alapállapotú 10 összetett lekérdezés lefuttatása és kiinduló metrikák (EXPLAIN PLAN, I/O költség) rögzítése.
+   - Alapállapotú 10 összetett lekérdezés lefuttatása és kiinduló metrik rögzítése.
    - Saját indexek alkalmazása, majd a tesztek újrafuttatása.
 
 3. **AI-alapú optimalizáció és összehasonlítás:**
