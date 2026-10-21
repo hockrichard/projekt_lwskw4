@@ -14,6 +14,7 @@ project_outline: "01-project-outline"
 
 ## Probléma
 
+---
 - **Skálázhatósági kihívások:** Az elektromosautó-töltő hálózatok nagy mennyiségű valós idejű és tranzakciós adatot generálnak (munkamenetek, mérések, időbélyegek).
 - **Lassú lekérdezések:** Nagy adatmennyiség mellett az összetett analitikai lekérdezések (aggregációk, ablakfüggvények) indexelés nélkül drasztikus teljesítményromlást okoznak.
 - **AI támogatás validációja:** Szükséges annak vizsgálata, hogy a generatív AI eszközök (LLM-ek) mennyire hatékonyak és megbízhatóak a relációs adatbázisok indexelési és lekérdezési optimalizációjában.
@@ -39,6 +40,7 @@ project_outline: "01-project-outline"
 - **Összetett lekérdezések:** 10 komplex SQL lekérdezés és natív üzleti logika (PL/SQL / T-SQL).
 - **Optimalizáció és AI:** Saját és AI által javasolt indexelési stratégiák (min. 3 lekérdezésnél) összehasonlító mérése végrehajtási tervek alapján.
 
+---
 ### Nincs benne a hatókörben
 - Komplett webes vagy mobil végfelhasználói GUI fejlesztése.
 - Éles termelési környezet kiépítése.
