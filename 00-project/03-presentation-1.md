@@ -71,4 +71,4 @@ project_outline: "01-project-outline"
 ## Következő lépések
 
 - Adatbázis-kezelő környezet (Oracle / MS SQL Server) és a DDL sématerv véglegesítése.
-- A mérésautomatizálási szkript elkészítése.
+- Skálázás: több tesztadat, több lekérdezés.
